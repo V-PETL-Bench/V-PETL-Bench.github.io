@@ -156,6 +156,18 @@
              Benchmark and Evaluations
         </h2>
 	<hr>
+	<p>
+	     V-PETL Bench offers a diverse and challenging benchmark across 24 image recognition datasets, 3 video action recognition datasets, and 3 dense prediction datasets.
+	     By evaluating 25 standard PETL algorithms on these dataset, we obtain several interesting findings: 
+	     1) Existing PETL algorithms can achieve performance competitive with Full fine-tuning in most downstream tasks and perform significantly better 
+		than Full fine-tuning when the amount of data is insufficient, which indicates that it could be an effective alternative to Full fine-tuning; 
+	     2) Existing PETL algorithms demonstrate significant efficiency, where most algorithms only updated less than 1% of the number of the pre-trained model. 
+		Additionally, they lead to improved computation and memory efficiency while achieving better performance; 
+	     3) Directly applying PETL algorithms from the NLP domain to vision tasks without any specific design results in performance degradation compared to well-designed 
+		PETL algorithms tailored for the CV domain; 
+	     4) The data and task similarity between pre-training and downstream tasks plays a key role, with higher similarity leading to better results. 
+		Furthermore, no single PETL algorithm consistently outperforms all others across all tasks.
+	</p>
         <div class="container" style="min-height: 224px">
             <div id="resultCarousel3" class="carousel slide" data-ride="carousel" data-interval="5000">
                 <div class="carousel-inner">

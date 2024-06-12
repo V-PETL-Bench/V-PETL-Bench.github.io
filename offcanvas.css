@@ -109,6 +109,40 @@
      margin-top: 30px;
  }
 
+ .carousel-container {
+   position: relative;
+   width: 100%;
+   height: 400px; /* 任意高度 */
+   overflow: hidden;
+ }
+ 
+ .carousel-slider {
+   position: relative;
+   width: calc(100% * (图片数量 + 1)); /* 需要足够宽来容纳所有图片 */
+   height: 100%;
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+ }
+ 
+ .carousel-item {
+   flex: none;
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .carousel-item:not(.active) {
+   opacity: 0; /* 可选，用于淡入淡出效果 */
+ }
+ 
+ /* 导航按钮的位置布局 */
+ .carousel-prev,
+ .carousel-next {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+ .carousel-prev { left: 10px; }
+ .carousel-next { right: 10px; }
 
 
 

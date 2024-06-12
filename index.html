@@ -137,108 +137,60 @@
         </p>
     </div>
 
-
-<!--     <div class="section">
-        <div class="col justify-content-center text-center">
-            <div class="col-sm-12">
-                <img src="figures/corr_example.png" style="width:100%">
-            </div>
-        </div>
-        <p>
-            Multimodal adaptation methods are sensitive to image and text corruptions. The two rows show image captioning and visual question answering predicted by Adapter respectively. Blue boxes contain the original image and query text. Orange boxes present the corrupted images, texts and model output.
-        </p>
-    </div> -->
-
-<!--     <div class="section">
+    <div class="section">
         <h2>
-            Model Adaptation Methods
+             Benchmark and Evaluations
         </h2>
         <hr>
         <div class="col justify-content-center text-center">
             <div class="col-sm-12">
-                <img src="figures/adapt.png" style="width:100%">
-            </div>
-        </div>
-        <p>
-            We investigate the robustness of four mainstream adaptation methods: full fine-tuning, soft prompt, LoRA, and adapter-based methods including Adapter , Hyperformer, and Compacter. To better understand the robustness of these adaptation methods, we also consider the information sharing across tasks. Therefore, for soft prompt, LoRA, and Compacters, we conduct experiments in both single and multiple manners. The single manner uses one adaptation model for all tasks, while the multiple manner uses independent adaptation modules for different tasks. For Adapter, besides the single and multiple manners, we also adopt the half-shared manner, where only the undersampling module in adapters is shared across tasks. In total, we have eleven adaptation methods
-        </p>
-    </div> -->
-
-<!--     <div class="section">
-        <h2>
-            Benchmark and Evaluations
-        </h2>
-        <hr>
-        <div class="col justify-content-center text-center">
-            <div class="col-sm-12">
-                <img src="figures/corr-eg.png" style="width:100%">
+                <img src="" style="width:100%">
             </div>
         </div>
         <p>
             
         </p>
-        <div>
-
-        </div>
-
-        <div class="col justify-content-center text-center">
-            <div class="col-sm-12">
-                <img src="figures/corr-img.png" style="width:100%">
-            </div>
-        </div>
-
-        <div class="col justify-content-center text-center">
-            <div class="col-sm-12">
-                <!-- <img src="figures/corr_methods.png" style="width:100%"> -->
-<!--                 <img src="figures/corr_text.png" style="width:80%">
-            </div>
-        </div>
-        <p>
-            We introduce 20 corruptions to image data. Except for the blank corruption, each type of corruption has five levels of severity. In total, there are 96 different corruptions.
-
-            We have adopted a total of 35 corruption methods  which can be grouped into three categories: <i>character-level, word-level</i>, and <i>sentence-level</i> based on the level of corruption.
-            We have also introduced various severity levels for text corruptions, as we have done for image corruptions. For character-level corruptions and some word-level corruptions, we apply five severity levels. However, for sentence-level corruptions and some word-level corruptions, only one perturbation is available. In total, we have 35 corruption methods along with 87 different perturbations.
-
-        </p>
-
-        <div class="section">
-            <h2>
-                Experimental Settings
-            </h2>
-            <hr>
-            <div class="col-sm-12">
-                <img src="figures/stat.png" style="width:100%">
-            </div>
-            <div class="col-sm-12">
-                <img src="figures/ada-method.png" style="width:60%" class="center">
-            </div>
-
-            <p>
-                Accuracy on the Karpathy-test split is evaluated for VQAv2. For GQA, accuracy on the test-dev split is evaluated, and accuracy on the test-P split is used for NLVR$^2$. In image captioning, we use CIDEr on the Karpathy-test split.
-            </p>
-
-        </div>   --> -->
-
-
     </div>
 
-    <br>
 
     <div class="section">
-        <h2>Bibtex</h2>
+        <h2>
+             Visualization
+        </h2>
         <hr>
-        <div class="bibtexsection">
-            
+        <div class="col justify-content-center text-center">
+            <div class="col-sm-12">
+                <img src="" style="width:100%">
+            </div>
         </div>
+        <p>
+            
+        </p>
     </div>
 
 
-        <footer>
-            <p>
-                Acknowledgement: This page is modified from <a href="https://yilundu.github.io/">Yilun Du</a> and <a href="https://www.cs.cmu.edu/~jielinq/">Jielin Qiu</a>.
-            </p>
-        </footer>
+
+    <div class="section">
+        <h2>
+             Codebase Structure
+        </h2>
+        <hr>
+        <div class="col justify-content-center text-center">
+            <div class="col-sm-12">
+                <img src="" style="width:100%">
+            </div>
+        </div>
+        <p>
+            We provide an overview of the codebase structure of V-PETL Bench, which which is organized into four abstract layers.
+            In the core layer, we implement the essential functions commonly used for training PETL algorithms.
+            In the algorithm layer, we first implement the base class for PETL algorithms, which includes initializing the datasets, data loaders, and models from the core layer.
+            The extension layer is dedicated to advancing the core PETL algorithms for visual analysis.
+            We encapsulate the core functions and algorithms within the API layer, creating a user-friendly interface for individuals from diverse backgrounds who are interested in applying PETL algorithms to new applications.
+        </p>
     </div>
+
+
+
 
 
 <!-- 
